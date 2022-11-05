@@ -7,6 +7,7 @@
  */
 
 #import "RNSVGSvgViewManager.h"
+#import "RNSVGSvgShadowView.h"
 #import "RNSVGSvgView.h"
 
 @implementation RNSVGSvgViewManager
@@ -16,6 +17,11 @@ RCT_EXPORT_MODULE()
 - (RNSVGPlatformView *)view
 {
   return [RNSVGSvgView new];
+}
+
+- (RCTShadowView *)shadowView
+{
+  return [RNSVGSvgShadowView new];
 }
 
 RCT_EXPORT_VIEW_PROPERTY(bbWidth, RNSVGLength *)
@@ -42,5 +48,7 @@ RCT_CUSTOM_VIEW_PROPERTY(hitSlop, UIEdgeInsets, RNSVGSvgView)
     }
   }
 }
+RCT_EXPORT_SHADOW_PROPERTY(vbWidth, CGFloat)
+RCT_EXPORT_SHADOW_PROPERTY(vbHeight, CGFloat)
 
 @end

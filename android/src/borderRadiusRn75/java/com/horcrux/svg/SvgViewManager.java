@@ -83,6 +83,11 @@ class SvgViewManager extends ReactViewManager
   }
 
   @Override
+  public SvgShadowNode createShadowNodeInstance() {
+    return new SvgShadowNode();
+  }
+
+  @Override
   public void updateExtraData(ReactViewGroup root, Object extraData) {
     super.updateExtraData(root, extraData);
     root.invalidate();
