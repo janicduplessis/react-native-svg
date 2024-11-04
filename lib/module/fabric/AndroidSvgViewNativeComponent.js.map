@@ -1,0 +1,1 @@
+{"version":3,"names":["codegenNativeComponent","excludedPlatforms","interfaceOnly"],"sourceRoot":"../../../src","sources":["fabric/AndroidSvgViewNativeComponent.ts"],"mappings":"AAAA,OAAOA,sBAAsB,MAAM,yDAAyD;AA+E5F,eAAeA,sBAAsB,CAAc,qBAAqB,EAAE;EACxEC,iBAAiB,EAAE,CAAC,KAAK,CAAC;EAC1BC,aAAa,EAAE;AACjB,CAAC,CAAC","ignoreList":[]}
